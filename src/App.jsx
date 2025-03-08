@@ -1,7 +1,12 @@
+import Formulario from "./components/Formulario"
+import ListadoProductos from "./components/ListadoProductos"
 
 const App = () => {
   return (
-    <div>App</div>
+    <>
+    <Formulario/>
+    <ListadoProductos/>
+  </>
   )
 }
 
