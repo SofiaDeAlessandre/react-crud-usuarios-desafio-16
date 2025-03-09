@@ -1,12 +1,10 @@
-import { useState } from "react";
-import USUARIOS from "../constants/USUARIOS";
+
 import Fila from "./Fila";
 
 
 
-const ListadoUsuarios = () => {
+const ListadoUsuarios = ({usuarios}) => {
 
-  const [usuarios, setUsuarios] = useState(USUARIOS)
 
   return (
     <table className="w-full text-sm text-left text-gray-500">
