@@ -2,10 +2,10 @@ const Formulario = () => {
   return (
     <>
       <h2 className="text-2xl font-semibold my-4">
-        Formulario de carga/edición de productos
+        Formulario de carga/edición de usuarios
       </h2>
 
-      <div className="grid grid-cols-3 gap-4 mb-4">
+      <div className="max-w-lg mb-4">
         <form className="bg-white border rounded-lg p-6">
           <label
             htmlFor="lbl-nombre"
@@ -28,7 +28,7 @@ const Formulario = () => {
           <input
             type="text"
             id="lbl-apellido"
-            placeholder="Ingresa el nombre"
+            placeholder="Ingresa el apellido"
             className="w-full p-2 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           ></input>
           <label
@@ -40,7 +40,7 @@ const Formulario = () => {
           <input
             type="text"
             id="lbl-edad"
-            placeholder="Ingresa el nombre"
+            placeholder="Ingresa la edad"
             className="w-full p-2 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           ></input>
           <label
@@ -52,7 +52,7 @@ const Formulario = () => {
           <input
             type="text"
             id="lbl-puesto"
-            placeholder="Ingresa el nombre"
+            placeholder="Ingresa el puesto"
             className="w-full p-2 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           ></input>
           <label
@@ -64,7 +64,7 @@ const Formulario = () => {
           <input
             type="text"
             id="lbl-foto"
-            placeholder="Ingresa el nombre"
+            placeholder="Ingresa la foto"
             className="w-full p-2 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           ></input>
 
