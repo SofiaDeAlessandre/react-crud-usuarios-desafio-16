@@ -1,7 +1,7 @@
 import Fila from "./Fila"
 
 
-const ListadoProductos = () => {
+const ListadoUsuarios = () => {
   return (
     <>
      <Fila/>
@@ -9,4 +9,4 @@ const ListadoProductos = () => {
   )
 }
 
-export default ListadoProductos
+export default ListadoUsuarios
