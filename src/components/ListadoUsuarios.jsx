@@ -1,5 +1,6 @@
 
 import Fila from "./Fila";
+import Spinner from "./Spinner";
 
 
 
@@ -7,7 +8,8 @@ const ListadoUsuarios = ({usuarios, borrarUsuario, setUsuarioAEditar}) => {
 
 
   return (
-    <table className="w-full text-sm text-left text-gray-500">
+   <>
+   {usuarios ? ( <table className="w-full text-sm text-left text-gray-500">
       <thead className="text-xs text-gray-700 uppercase bg-gray-200">
         <tr>
           <th className="px-6 py-3">Nombre</th>
@@ -20,13 +22,16 @@ const ListadoUsuarios = ({usuarios, borrarUsuario, setUsuarioAEditar}) => {
       </thead>
       <tbody>
         {
-          usuarios.map((usuario) => (
+          usuarios ? (usuarios.map((usuario) => (
             <Fila usuario={usuario} key={usuario.nombre} borrarUsuario={borrarUsuario} setUsuarioAEditar={setUsuarioAEditar}/>
-          ))
+          ))) : (<Spinner/>)
         }
       </tbody>
 
-    </table>
+    </table>) : (<Spinner/>)
+   
+  }
+   </>
   );
 };
 

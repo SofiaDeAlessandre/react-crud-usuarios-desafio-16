@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react";
 
-const Formulario = ({ agregarUsuario, usuarioAEditar, setUsuarioAEditar, editarUsuario }) => {
+const Formulario = ({
+  agregarUsuario,
+  usuarioAEditar,
+  setUsuarioAEditar,
+  editarUsuario,
+}) => {
   const dataFormularioInicial = {
     id: null,
     nombre: "",
@@ -29,12 +34,12 @@ const Formulario = ({ agregarUsuario, usuarioAEditar, setUsuarioAEditar, editarU
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if ( dataFormulario.id === null) {
-agregarUsuario(dataFormulario)
+    if (dataFormulario.id === null) {
+      agregarUsuario(dataFormulario);
     } else {
-editarUsuario(dataFormulario)
+      editarUsuario(dataFormulario);
     }
-setDataFormulario(dataFormularioInicial)
+    handleReset()
   };
 
   const handleReset = () => {
