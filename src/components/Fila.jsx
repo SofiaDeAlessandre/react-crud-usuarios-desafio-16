@@ -1,5 +1,14 @@
 
-const Fila = ({usuario}) => {
+const Fila = ({usuario, borrarUsuario, setUsuarioAEditar}) => {
+
+  const  handleEliminar = (id) => {
+borrarUsuario(id)
+    }
+
+    const handleEditar = (usuario) => {
+setUsuarioAEditar(usuario)
+    }
+
   return (
     <tr className="bg-white border-b border-gray-200">
           <th className="px-6 py-4">{usuario.nombre}</th>
@@ -11,10 +20,10 @@ const Fila = ({usuario}) => {
             <button className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 cursor-pointer mr-2">
               Ver
             </button>
-            <button className="px-4 py-2 bg-yellow-600 text-white rounded-lg hover:bg-yellow-700 cursor-pointer mr-2">
+            <button onClick={() => handleEditar(usuario)} className="px-4 py-2 bg-yellow-600 text-white rounded-lg hover:bg-yellow-700 cursor-pointer mr-2">
               Editar
             </button>
-            <button className="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 cursor-pointer mr-2">
+            <button onClick={() => handleEliminar(usuario.id)} className="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 cursor-pointer mr-2">
               Borrar
             </button>
           </td>

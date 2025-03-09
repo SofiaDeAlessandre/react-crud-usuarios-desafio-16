@@ -3,7 +3,7 @@ import Fila from "./Fila";
 
 
 
-const ListadoUsuarios = ({usuarios}) => {
+const ListadoUsuarios = ({usuarios, borrarUsuario, setUsuarioAEditar}) => {
 
 
   return (
@@ -21,7 +21,7 @@ const ListadoUsuarios = ({usuarios}) => {
       <tbody>
         {
           usuarios.map((usuario) => (
-            <Fila usuario={usuario} key={usuario.nombre}/>
+            <Fila usuario={usuario} key={usuario.nombre} borrarUsuario={borrarUsuario} setUsuarioAEditar={setUsuarioAEditar}/>
           ))
         }
       </tbody>
