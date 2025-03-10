@@ -34,7 +34,7 @@ setUsuarioAEditar(usuario)
           <td className="px-6 py-4">{usuario.apellido}</td>
           <td className="px-6 py-4">{usuario.edad}</td>
           <td className="px-6 py-4">{usuario.puesto}</td>
-          <td className="px-6 py-4"><img src={usuario.foto} alt={`${usuario.nombre} ${usuario.apellido}`} /></td>
+          <td className="px-6 py-4 w-40 h-40"><img src={usuario.foto} alt={`${usuario.nombre} ${usuario.apellido}`} /></td>
           <td className="px-6 py-4">
             <button className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 cursor-pointer mr-2">
               Ver

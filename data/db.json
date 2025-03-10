@@ -1,12 +1,44 @@
 {
   "usuarios": [
     {
+      "id": "1",
+      "nombre": "Juan",
+      "apellido": "Pérez",
+      "edad": 28,
+      "puesto": "Desarrollador Frontend",
+      "foto": "/src/assets/avatar-1.avif"
+    },
+    {
       "id": "2",
-      "nombre": "Anaa",
-      "apellido": "Gómezz",
+      "nombre": "Ana",
+      "apellido": "Gómez",
       "edad": 35,
       "puesto": "Ingeniera de Software",
       "foto": "/src/assets/avatar-woman-1.avif"
+    },
+    {
+      "id": "3",
+      "nombre": "Carlos",
+      "apellido": "Sánchez",
+      "edad": 42,
+      "puesto": "Administrador de Sistemas",
+      "foto": "/src/assets/avatar-2.avif"
+    },
+    {
+      "id": "4",
+      "nombre": "Lucía",
+      "apellido": "Martínez",
+      "edad": 29,
+      "puesto": "Desarrolladora Backend",
+      "foto": "/src/assets/avatar-woman-6.png"
+    },
+    {
+      "id": "5",
+      "nombre": "Pedro",
+      "apellido": "López",
+      "edad": 39,
+      "puesto": "DevOps Engineer",
+      "foto": "/src/assets/avatar-3.avif"
     },
     {
       "id": "6",
@@ -14,7 +46,7 @@
       "apellido": "Rodríguez",
       "edad": 30,
       "puesto": "Analista de Datos",
-      "foto": "https://www.example.com/foto6.jpg"
+      "foto": "/src/assets/avatar-woman-3.avif"
     },
     {
       "id": "7",
@@ -22,7 +54,7 @@
       "apellido": "Fernández",
       "edad": 26,
       "puesto": "Diseñador UI/UX",
-      "foto": "https://www.example.com/foto7.jpg"
+      "foto": "/src/assets/avatar-4.avif"
     },
     {
       "id": "8",
@@ -30,7 +62,7 @@
       "apellido": "García",
       "edad": 33,
       "puesto": "Consultora de Tecnología",
-      "foto": "https://www.example.com/foto8.jpg"
+      "foto": "/src/assets/avatar-woman-4.avif"
     },
     {
       "id": "9",
@@ -38,7 +70,7 @@
       "apellido": "Vázquez",
       "edad": 40,
       "puesto": "Arquitecto de Soluciones",
-      "foto": "https://www.example.com/foto9.jpg"
+      "foto": "/src/assets/avatar-5.avif"
     },
     {
       "id": "10",
@@ -46,31 +78,7 @@
       "apellido": "Hernández",
       "edad": 31,
       "puesto": "Desarrolladora Full Stack",
-      "foto": "https://www.example.com/foto10.jpg"
-    },
-    {
-      "id": null,
-      "nombre": "Juanmmmmmmm",
-      "apellido": "Pérez",
-      "edad": "28",
-      "puesto": "Desarrollador Frontend",
-      "foto": "https://www.example.com/foto1.jpg"
-    },
-    {
-      "id": "b6f7",
-      "nombre": "",
-      "apellido": "",
-      "edad": "",
-      "puesto": "",
-      "foto": ""
-    },
-    {
-      "id": "0fd8",
-      "nombre": "dada",
-      "apellido": "Pérezzzzzz",
-      "edad": "",
-      "puesto": "",
-      "foto": ""
+      "foto": "/src/assets/avatar-woman-5.png"
     }
   ]
 }
