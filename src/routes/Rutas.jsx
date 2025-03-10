@@ -4,6 +4,7 @@ import Nosotros from "../pages/Nosotros";
 import Contacto from "../pages/Contacto";
 import NoEncontrado from "../pages/NoEncontrado";
 import Usuarios from "../pages/Usuarios";
+import UsuariosDetalle from "../pages/UsuariosDetalle";
 
 const Rutas = () => {
   const rutasApp = useRoutes([
@@ -14,6 +15,10 @@ const Rutas = () => {
     {
       path: "/usuarios",
       element: <Usuarios />,
+    },
+    {
+      path: "/usuarios/detalle/:id",
+      element: <UsuariosDetalle />,
     },
     {
       path: "/nosotros",

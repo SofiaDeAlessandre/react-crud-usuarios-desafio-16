@@ -1,6 +1,10 @@
+import { useNavigate } from "react-router";
 import Swal from "sweetalert2";
 
 const Fila = ({usuario, borrarUsuario, setUsuarioAEditar}) => {
+
+
+  const navigate = useNavigate() 
 
   const  handleEliminar = (id) => {
 
@@ -28,6 +32,11 @@ const Fila = ({usuario, borrarUsuario, setUsuarioAEditar}) => {
 setUsuarioAEditar(usuario)
     }
 
+const handleVer = (id) => {
+navigate(`/usuarios/detalle/${id}`)
+}
+
+
   return (
     <tr className="bg-white border-b border-gray-200">
           <th className="px-6 py-4">{usuario.nombre}</th>
@@ -36,7 +45,7 @@ setUsuarioAEditar(usuario)
           <td className="px-6 py-4">{usuario.puesto}</td>
           <td className="px-6 py-4 w-40 h-40"><img src={usuario.foto} alt={`${usuario.nombre} ${usuario.apellido}`} /></td>
           <td className="px-6 py-4">
-            <button className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 cursor-pointer mr-2">
+            <button onClick={() => handleVer(usuario.id)} className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 cursor-pointer mr-2">
               Ver
             </button>
             <button onClick={() => handleEditar(usuario)} className="px-4 py-2 bg-yellow-600 text-white rounded-lg hover:bg-yellow-700 cursor-pointer mr-2">

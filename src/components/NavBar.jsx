@@ -1,15 +1,16 @@
+import { Link, NavLink } from "react-router"
 
 
 const NavBar = () => {
   return (
     <nav className="bg-amber-600 p-4">
         <div className="container mx-auto flex justify-between items-center">
-            <a href="#" className="text-white text-lg font-bold">Educación IT</a>
+            <Link to="/" className="text-white text-lg font-bold">Educación IT</Link>
             <ul className="flex space-x-4">
-                <li><a href="/" className="text-white hover:text-gray-200">Inicio</a></li>
-                <li><a href="/usuarios" className="text-white hover:text-gray-200">Usuarios</a></li>
-                <li><a href="/nosotros" className="text-white hover:text-gray-200">Nosotros</a></li>
-                <li><a href="/contacto" className="text-white hover:text-gray-200">Contacto</a></li>
+                <li><NavLink to="/" className="text-white hover:text-gray-200">Inicio</NavLink></li>
+                <li><NavLink to="/usuarios" className="text-white hover:text-gray-200">Usuarios</NavLink></li>
+                <li><NavLink to="/nosotros" className="text-white hover:text-gray-200">Nosotros</NavLink></li>
+                <li><NavLink to="/contacto" className="text-white hover:text-gray-200">Contacto</NavLink></li>
             </ul>
         </div>
     </nav>
